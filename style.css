@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+*,*:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0;
+}
+
+.container {
+    max-width: 32.7rem;
+    display: block;
+    overflow: hidden;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card {
+    margin-top: 0;
+    background-color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: hsl(223, 47%, 23%);
+}
+.desc {
+    font-size: 1.6rem;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin: 2.5rem 0;
+    line-height: 1.5;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 2.5rem 0;
+}
+
+.plan-left {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.plan-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.plan-name {
+    font-size: 1.6rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin: 0;
+}
+
+.plan-price {
+    font-size: 1.2rem;
+    color: hsl(224, 23%, 55%);
+    margin: 0;
+}
+
+.btn-change {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.btn-payment {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1.6rem;
+}
+
+.btn-cancel {
+    display: block;
+    text-align: center;
+    margin: 2.5rem auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.btn-payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.692);
+}
+
+.btn-change:hover {
+    color: hsla(245, 75%, 52%, 0.692);
+}
+
+.btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 450px) {
+    .container {
+        max-width: 44rem;
+    }
+    .title {
+        font-size: 2.8rem;
+    }
+    .desc {
+        font-size: 1.6rem;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .plan-container {
+        margin: 0 3em 2em 3em;
+        padding: 2.4rem;
+    }
+    .plan-price{
+        font-size: 1.6rem;
+    }
+    .btn-change {
+        font-size: 1.5rem;
+    }
+}
